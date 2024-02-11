@@ -4,7 +4,7 @@ html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
 * {font-size: 30px; font-family: 'Nanum Gothic', sans-serif; line-height: 1;}
 .color-red {color: #ff5254;}
 
-.game-wrap {background:#e9e8e8; min-height: 100vh; max-width: 700px; margin:0 auto; padding:100px 0; }
+.game-wrap {background:#e9e8e8; min-height: calc(100vh - 200px); max-width: 700px; margin:0 auto; padding:100px 0; }
 .top-area {width:500px; margin:0 auto; display: flex; font-size:30px; justify-content: space-between;}
 .top-area button { display:block; background:#dadada; border:none; color:#737373; padding:35px 60px 30px; border-radius: 50px;}
 .top-area button svg {vertical-align: middle;}
@@ -25,7 +25,7 @@ html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
 
 @media screen and (max-width: 1023px){
     * {font-size: 5vw;}
-    .game-wrap {padding:20vw 0;}
+    .game-wrap {padding:20vw 0; min-height: calc(100vh - 40vw);}
 	.top-area {max-width: 82vw;}
     .top-area button {padding:3vw 9vw;}
     .chance-area {padding:3vw 9vw; display: flex; align-items: center; gap: 1vw; font-size: 5.5vw;}
