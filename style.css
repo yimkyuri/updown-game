@@ -23,7 +23,7 @@ html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
 .game-area button:disabled,
 .game-area button[disabled]{ background: #dadada; color: #bdbdbd;}
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 699px){
     * {font-size: 5vw;}
     .game-wrap {padding:20vw 0; min-height: calc(100vh - 40vw);}
 	.top-area {max-width: 82vw;}
