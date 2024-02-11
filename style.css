@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
+* {font-size: 30px; font-family: 'Nanum Gothic', sans-serif; line-height: 1;}
+.color-red {color: #ff5254;}
+
+.game-wrap {background:#e9e8e8; min-height: 100vh; max-width: 700px; margin:0 auto; padding:100px 0; }
+.top-area {width:500px; margin:0 auto; display: flex; font-size:30px; justify-content: space-between;}
+.top-area button { display:block; background:#dadada; border:none; color:#737373; padding:35px 60px 30px; border-radius: 50px;}
+.top-area button svg {vertical-align: middle;}
+.chance-area {background:#fff; padding:35px 60px 30px; border-radius: 50px;}
+.visual-area img {width:100%;}
+
+.game-area {width:500px; margin:0 auto; text-align: center;}
+.game-area p {color:#0093ca; font-size:23px; margin-bottom:25px;}
+.game-area input {outline: none; width:100%; line-height: 85px; border-radius: 50px; background:#fff; border:5px solid #383838; 
+    text-align: center; font-size:30px; box-sizing: border-box;}
+.game-area input[type="number"]::-webkit-outer-spin-button,
+.game-area input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
+.game-area input::placeholder {  color: #bdbdbd; }
+.game-area input:focus::placeholder {  color: #fff; }
+.game-area button { display:block; background: #383838; color:#fff; width:100%; line-height: 85px; border-radius: 50px; margin-top:15px;}
+.game-area button:disabled,
+.game-area button[disabled]{ background: #dadada; color: #bdbdbd;}
+
+@media screen and (max-width: 1023px){
+    * {font-size: 5vw;}
+    .game-wrap {padding:20vw 0;}
+	.top-area {max-width: 82vw;}
+    .top-area button {padding:3vw 9vw;}
+    .chance-area {padding:3vw 9vw; display: flex; align-items: center; gap: 1vw; font-size: 5.5vw;}
+    .chance-area span {font-size:5.5vw;}
+    .game-area p {font-size:4vw; margin-bottom:5vw;}
+    .game-area {max-width: 82vw;}
+    .game-area input {line-height: 15vw; border-width: 3px; font-size:5.5vw;}
+    .game-area button {line-height: 16vw; margin-top:3vw;}
+}

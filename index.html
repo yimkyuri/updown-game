@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Up & Down Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>업다운 게임</h1>
-    <div id="chances-area"></div>
-    <input type="text" id="user-input" />
-    <button id="play-button">제출</button>
-    <button id="reset-button">Reset</button>
-    <div id="result-area">결과가 이곳에 나옵니다.</div>
-    
+    <div class="game-wrap">
+        <div class="top-area">
+            <div class="chance-area">
+                <span class="color-red">♥︎</span> X <span id="chances-area"></span>
+            </div>
+            <button id="reset-button">
+                <svg width="32px" height="32px" viewBox="0 0 23 23">
+                    <g fill="none" fill-rule="evenodd" stroke="#737373" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 1 1 0 2.5 2.5)">
+                    <path d="m3.98652376 1.07807068c-2.38377179 1.38514556-3.98652376 3.96636605-3.98652376 6.92192932 0 4.418278 3.581722 8 8 8s8-3.581722 8-8-3.581722-8-8-8"/>
+                    <path d="m4 1v4h-4" transform="matrix(1 0 0 -1 0 6)"/>
+                    </g>
+                </svg> RESET</button>
+        </div>
+        <div class="visual-area">
+            <img id="visual-img" src="img/img1.jpg" alt="">
+        </div>
+        <div class="game-area">
+            <p id="notice"></p>
+            <input type="number" id="user-input" placeholder="숫자를 입력해주세요." />
+            <button id="play-button">제출하기</button>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
