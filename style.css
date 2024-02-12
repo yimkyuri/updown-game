@@ -27,11 +27,11 @@ html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
     * {font-size: 5vw;}
     .game-wrap {padding:20vw 0; min-height: calc(100vh - 40vw);}
 	.top-area {max-width: 82vw;}
-    .top-area button {padding:3vw 9vw;}
-    .chance-area {padding:3vw 9vw; display: flex; align-items: center; gap: 1vw; font-size: 5.5vw;}
+    .top-area button {padding:2.5vw 9vw;}
+    .chance-area {padding:2.5vw 9vw; display: flex; align-items: center; gap: 1vw; font-size: 5.5vw;}
     .chance-area span {font-size:5.5vw;}
     .game-area p {font-size:4vw; margin-bottom:5vw;}
     .game-area {max-width: 82vw;}
-    .game-area input {line-height: 15vw; border-width: 3px; font-size:5.5vw;}
-    .game-area button {line-height: 16vw; margin-top:3vw;}
+    .game-area input {line-height: 12vw; border-width: 3px; font-size:5.5vw;}
+    .game-area button {line-height: 13.5vw; margin-top:3vw;}
 }
