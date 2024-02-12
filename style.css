@@ -2,7 +2,7 @@
 
 html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
 * {font-size: 30px; font-family: 'Nanum Gothic', sans-serif; line-height: 1;}
-.color-red {color: #ff5254;}
+.color-red {color: #ff5254; font-family: sans-serif;}
 
 .game-wrap {background:#e9e8e8; min-height: calc(100vh - 200px); max-width: 700px; margin:0 auto; padding:100px 0; }
 .top-area {width:500px; margin:0 auto; display: flex; font-size:30px; justify-content: space-between;}
