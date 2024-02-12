@@ -9,7 +9,7 @@ html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
 .top-area button { display:block; background:#dadada; border:none; color:#737373; padding:35px 60px 30px; border-radius: 50px;}
 .top-area button svg {vertical-align: middle;}
 .chance-area {background:#fff; padding:35px 60px 30px; border-radius: 50px;}
-.visual-area img {width:100%;}
+.visual-area img {width:100%; vertical-align: top;}
 
 .game-area {width:500px; margin:0 auto; text-align: center;}
 .game-area p {color:#0093ca; font-size:23px; margin-bottom:25px;}
@@ -32,6 +32,6 @@ html, body, div, span, p, button  { margin: 0; padding: 0; border: 0;}
     .chance-area span {font-size:5.5vw;}
     .game-area p {font-size:4vw; margin-bottom:5vw;}
     .game-area {max-width: 82vw;}
-    .game-area input {line-height: 12vw; border-width: 3px; font-size:5.5vw;}
+    .game-area input {line-height: 1vw; border-width: 3px; font-size:5.5vw;}
     .game-area button {line-height: 13.5vw; margin-top:3vw;}
 }
