@@ -14,11 +14,15 @@ function play() {
     if ( userValue < 1  || userValue > 100 || userValue == '' ) {
         notice.textContent = "[ ! ] 1~100 사이의 숫자를 입력해주세요."
         return
+    } else {
+        notice.textContent = ""
     }
     if ( history.includes(userValue) ) {
         notice.textContent = "[ ! ] 이미 사용한 숫자 입니다."
         return
-    } 
+    } else {
+        notice.textContent = ""
+    }
 
     chances --;
     chancesArea.textContent = chances
