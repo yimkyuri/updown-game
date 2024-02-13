@@ -31,12 +31,15 @@ function play() {
     if ( userValue > pcNumber ) {
         // notice.textContent = "Down!"
         visualImg.src = "img/img3.jpg";
+        userInput.style.borderColor = "#ff5254";        
     } else if ( userValue < pcNumber ) {
         // notice.textContent = "Up!"
         visualImg.src = "img/img2.jpg";
+        userInput.style.borderColor = "#00a5de";
     } else {
         // notice.textContent = "정답입니다!"
         visualImg.src = "img/img4.jpg";
+        userInput.style.borderColor = "#383838";
         gameOver = true;
     }
     history.push(userValue);
@@ -50,6 +53,7 @@ function play() {
         playButton.disabled =  true;
         if ( userValue != pcNumber ) {
             visualImg.src = "img/img5.jpg";
+            userInput.style.borderColor = "#383838";
         }
     }
 
@@ -63,13 +67,14 @@ function reset() {
     history = [];
     gameOver = false;
     notice.textContent = ""
+    userInput.style.borderColor = "#383838";
 }
 
 function randomNumber() {
     pcNumber = Math.floor( Math.random() * 100 ) + 1;
     console.log ("정답", pcNumber);
     chances = 5;
-    chancesArea.textContent = chances
+    chancesArea.textContent = chances;
 }
 
 
@@ -77,6 +82,7 @@ playButton.addEventListener("click", play);
 resetButton.addEventListener("click", reset);
 userInput.addEventListener("focus", function() {
     userInput.value = ""
+    userInput.style.borderColor = "#383838";
 })
 
 randomNumber();
